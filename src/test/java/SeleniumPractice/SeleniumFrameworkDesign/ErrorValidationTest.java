@@ -46,7 +46,7 @@ Boolean match=cartPage.verifyCartProducts("ZARA COAT 33");
 	public void Submitorder() throws IOException, InterruptedException
 	{
 	String productName="ZARA COAT 3";
- LandingPage.LoginApplication("mnlptl84@gmail.com", "Minal@12");
+ LandingPage.LoginApplication("mnlptl84@gmail.com", "Minal@1245");
  LandingPage.getErrorMessage();
  Assert.assertEquals("Incorrect email or password.","LandingPage.getErrorMessage()");
  
