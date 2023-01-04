@@ -65,6 +65,6 @@ public OrderPage OrderPage()
 	public void CountryDropdown()
 	{
 		Actions act=new Actions(driver);
-	     act.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")),"India").build().perform();
+	     act.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")),"US").build().perform();
 	}
 }

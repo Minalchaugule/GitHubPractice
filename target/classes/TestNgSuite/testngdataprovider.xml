@@ -14,7 +14,7 @@
     </classes>
   </test> <!-- Test -->
   
-  <test  name="Error Validation Test">
+  <test  name="Error Verification Test">
     <classes>
       <class name="SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest"/>
     </classes>
