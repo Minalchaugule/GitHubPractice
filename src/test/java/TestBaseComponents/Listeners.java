@@ -67,8 +67,7 @@ public class Listeners extends TestBase implements ITestListener{
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-		ITestListener.super.onFinish(context);
+		System.out.println("Finish all test cases");;
 	}
 
 }

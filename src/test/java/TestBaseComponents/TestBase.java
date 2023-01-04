@@ -90,6 +90,6 @@ public class TestBase {
 	@AfterMethod(alwaysRun=true)
  public void tearDown()
   {
-	  driver.close();
+	  driver.quit();
   }
 }
