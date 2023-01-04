@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-28T03:48:54 IST" name="Suite" finished-at="2022-12-28T03:49:20 IST" duration-ms="26130">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationTest.ProductErrorValidation()[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest@5b12b668]" name="ProductErrorValidation" class="SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="PurchaseOrderTest.Submitorder(java.util.HashMap)[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest@59662a0b]" name="Submitorder" class="SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2022-12-28T03:48:54 IST" name="Purchase Order Test" finished-at="2022-12-28T03:48:54 IST" duration-ms="51">
+      <class name="SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest">
+        <test-method signature="Submitorder(java.util.HashMap)[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest@59662a0b]" started-at="2022-12-28T03:48:54 IST" name="Submitorder" data-provider="getData" finished-at="2022-12-28T03:48:54 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: null\src\test\java\SeleniumFrameworkDesignData\PurchaseOrder.json (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: null\src\test\java\SeleniumFrameworkDesignData\PurchaseOrder.json (The system cannot find the path specified)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.FileNotFoundException: null\src\test\java\SeleniumFrameworkDesignData\PurchaseOrder.json (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:2388)
+at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:2506)
+at TestBaseComponents.TestBase.getJsondataToMap(TestBase.java:63)
+at SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest.getData(PurchaseOrderTest.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+... 19 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submitorder -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest@59662a0b]" started-at="2022-12-28T03:48:54 IST" name="OrderHistoryTest" finished-at="2022-12-28T03:48:54 IST" depends-on-methods="SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest.Submitorder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest.OrderHistoryTest() on instance SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest@59662a0b depends on not successfully finished methods 
+[SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest.Submitorder() on instance SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest@59662a0b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest.OrderHistoryTest() on instance SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest@59662a0b depends on not successfully finished methods 
+[SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest.Submitorder() on instance SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest@59662a0b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+      </class> <!-- SeleniumPractice.SeleniumFrameworkDesign.PurchaseOrderTest -->
+    </test> <!-- Purchase Order Test -->
+    <test started-at="2022-12-28T03:48:54 IST" name="Error Validation Test" finished-at="2022-12-28T03:49:20 IST" duration-ms="26130">
+      <class name="SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest@5b12b668]" started-at="2022-12-28T03:48:54 IST" name="LaunchApplication" finished-at="2022-12-28T03:48:58 IST" duration-ms="3794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest@5b12b668]" started-at="2022-12-28T03:48:58 IST" name="ProductErrorValidation" finished-at="2022-12-28T03:49:00 IST" duration-ms="2449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest@5b12b668]" started-at="2022-12-28T03:49:00 IST" name="tearDown" finished-at="2022-12-28T03:49:00 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest@5b12b668]" started-at="2022-12-28T03:49:00 IST" name="LaunchApplication" finished-at="2022-12-28T03:49:03 IST" duration-ms="2784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="Submitorder()[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest@5b12b668]" started-at="2022-12-28T03:49:03 IST" name="Submitorder" finished-at="2022-12-28T03:49:04 IST" duration-ms="533" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [LandingPage.getErrorMessage()] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [LandingPage.getErrorMessage()] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest.Submitorder(ErrorValidationTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Submitorder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest@5b12b668]" started-at="2022-12-28T03:49:04 IST" name="tearDown" finished-at="2022-12-28T03:49:20 IST" duration-ms="16274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumPractice.SeleniumFrameworkDesign.ErrorValidationTest -->
+    </test> <!-- Error Validation Test -->
+  </suite> <!-- Suite -->
+</testng-results>
